@@ -18,4 +18,7 @@ balance = 1000  # initial balance
 withdraw_amount = int(input("Enter the amount to withdraw: "))  # takes input from the user for withdrawal amount
 if withdraw_amount <= balance:  # checks if the withdrawal amount is less than or equal to the balance
     balance -= withdraw_amount  # deducts the withdrawal amount from the balance
-    print(f"Withdrawal successful. Your new balance is: {balance}")  # prints the new balance       
+    print(f"Withdrawal successful. Your new balance is: {balance}")  # prints the new balance      
+
+
+# attendance example
