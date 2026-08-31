@@ -33,3 +33,11 @@ if battery_low:
 else:
     print("battery is fine")
 
+# Is the user an admin?    
+is_admin = True
+
+if is_admin:
+    print("Open admin dashboard")
+else:
+    print("Open user dashboard")
+
