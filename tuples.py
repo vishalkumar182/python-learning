@@ -48,3 +48,12 @@ print(my_list)
 
 
 # Tuples can be used as keys in dictionaries, while lists cannot. This is because tuples are hashable, while lists are not.
+
+# use of tuples and lists in functions
+def calculate_area(length, width):
+    return length * width
+
+# Example usage
+area = calculate_area(5, 3)
+print(area) 
+
