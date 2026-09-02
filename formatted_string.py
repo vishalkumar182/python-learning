@@ -23,3 +23,8 @@ print(f"My name is {name} and I am {age} years old.") # using f-string to format
 name = input("Enter your name: ")
 age = input("Enter your age: ")
 print("My name is {} and I am {} years old.".format(name, age)) # using format() method to format string with variables
+
+l = int(input("enter length:"))
+b = int(input("enter breadth:"))
+print(f"area is {l*b}")
+
