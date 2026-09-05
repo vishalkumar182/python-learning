@@ -103,3 +103,27 @@ print(my_set)
 
 # important points about sets in Python:
 # 1. Sets are unordered collections of unique elements.
+
+
+# One Important Property. 
+# Sets are unordered collections.positional indexing is not possible.example of unordered collection
+my_set = {10, 20, 30, 40}
+print(my_set)
+print(my_set[0])  # This will raise an error since sets are unordered and do not support indexing.
+
+
+# Lesson 3 — Creating Sets
+# 1. Using curly braces {}
+my_set = {1, 2, 3, 4, 5}
+print(my_set)
+
+# 2. Using the set() constructor
+my_set = set([1, 2, 3, 4, 5])
+print(my_set)
+
+numbers = [10, 20, 10, 30, 20]
+unique_numbers = set(numbers)
+print(unique_numbers)
+
+
+## ⚠️ VERY IMPORTANT: Empty Set Trap
