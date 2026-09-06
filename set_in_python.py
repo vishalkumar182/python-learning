@@ -127,3 +127,8 @@ print(unique_numbers)
 
 
 ## ⚠️ VERY IMPORTANT: Empty Set Trap
+empty_set = {}  # This creates an empty dictionary, not a set
+print(type(empty_set))  # Output: <class 'dict'>
+
+empty_set = set()  # This creates an empty set
+print(type(empty_set))  # Output: <class 'set'>
