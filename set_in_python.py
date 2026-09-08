@@ -132,3 +132,73 @@ print(type(empty_set))  # Output: <class 'dict'>
 
 empty_set = set()  # This creates an empty set
 print(type(empty_set))  # Output: <class 'set'>
+
+## We can use a set to quickly get unique values from data and remove duplicates.
+customer_ids = [101, 102, 101, 103, 102, 104]
+
+unique_customers = set(customer_ids)
+
+print(unique_customers)
+print(len(unique_customers))
+
+#One More Important Concept: set() Can Convert Different Collections . This is where set() becomes more powerful.
+
+# from list to set
+my_list = [1, 2, 3, 4, 5, 1, 2, 3]
+my_set = set(my_list)
+print(my_set)
+
+# from tuple to set
+my_tuple = (1, 2, 3, 4, 5, 1, 2, 3)
+my_set = set(my_tuple)
+print(my_set)
+
+# from string to set
+my_string = "hello world"  
+my_set = set(my_string)
+print(my_set)
+
+# from dictionary to set
+my_dict = {"a": 1, "b": 2, "c": 3}
+my_set = set(my_dict)
+print(my_set)
+
+# from range to set
+my_range = range(1, 6)
+my_set = set(my_range)
+print(my_set)
+
+# from set to set
+my_set1 = {1, 2, 3, 4, 5}
+my_set2 = set(my_set1)
+print(my_set2)
+
+# Note:"A set stores unique elements, so duplicate values are automatically removed"
+
+
+# Lesson 4 — Adding and Removing Elements
+
+# 1. Adding elements to a set :
+# use the add() method to add a single element to a set. 
+# If the element already exists, it will not be added again.
+
+fruits = {"apple", "banana", "cherry"}
+fruits.add("orange")  # add a single element
+print(fruits)  # Output: {'apple', 'banana', 'cherry', 'orange'}
+
+
+fruits = {"apple", "banana"}
+fruits.add("apple")
+print(fruits)  # Output: {'apple', 'banana'}
+
+# 2.Adding multiple elements to a set:
+# use the update() method to add multiple elements to a set.
+
+fruits = {"apple", "banana", "cherry"}
+fruits.update(["orange", "grape"])
+print(fruits)  # Output: {'apple', 'banana', 'cherry', 'orange', 'grape'}   
+
+#    OR
+fruits = {"apple", "banana", "cherry"}
+fruits.update(("orange", "grape"))
+print(fruits)  # Output: {'apple', 'banana', 'cherry', 'orange', 'grape'}   
