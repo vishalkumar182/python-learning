@@ -202,3 +202,38 @@ print(fruits)  # Output: {'apple', 'banana', 'cherry', 'orange', 'grape'}
 fruits = {"apple", "banana", "cherry"}
 fruits.update(("orange", "grape"))
 print(fruits)  # Output: {'apple', 'banana', 'cherry', 'orange', 'grape'}   
+
+# 3. Removing elements from a set:
+
+# use the remove() method to remove a specific element from a set.
+fruits = {"apple", "banana", "cherry"}
+fruits.remove("banana")
+print(fruits)  # Output: {'apple', 'cherry'}
+
+# use the discard() method to remove a specific element from a set.
+fruits = {"apple", "banana", "cherry"}
+fruits.discard("banana")
+print(fruits)  # Output: {'apple', 'cherry'}
+
+# use the pop() method to remove and return an arbitrary element from a set.
+fruits = {"apple", "banana", "cherry"}
+removed_fruit = fruits.pop()
+print(removed_fruit)  # Output: (arbitrary element from the set)
+print(fruits)  # Output: (set with the arbitrary element removed)
+
+# use the clear() method to remove all elements from a set.
+fruits = {"apple", "banana", "cherry"}
+fruits.clear()
+print(fruits)  # Output: set()
+
+# use the del keyword to delete a set entirely.
+fruits = {"apple", "banana", "cherry"}
+del fruits
+
+# remove() vs discard() vs pop() vs clear() vs del
+# remove() - removes a specific element from the set. Raises KeyError if the element is not found.
+# discard() - removes a specific element from the set. Does not raise an error if the element is not found.
+# pop() - removes and returns an arbitrary element from the set. Raises KeyError if the set is empty.
+# clear() - removes all elements from the set, leaving it empty.    
+
+# to remove multiple elements from a set, you can use the difference_update() method or the intersection_update() method.
