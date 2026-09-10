@@ -239,3 +239,9 @@ del fruits
 # to remove multiple elements from a set, you can use the difference_update() method or the intersection_update() method.
 
 
+
+# membership testing
+# Membership testing is the process of checking whether an element is present in a collection or not.
+fruits = {"apple", "banana", "cherry"}
+print("apple" in fruits)  # Output: True
+print("orange" in fruits)  # Output: False
