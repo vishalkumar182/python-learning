@@ -237,3 +237,5 @@ del fruits
 # clear() - removes all elements from the set, leaving it empty.    
 
 # to remove multiple elements from a set, you can use the difference_update() method or the intersection_update() method.
+
+
