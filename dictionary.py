@@ -58,3 +58,40 @@ empty_dict2 = dict()
 
 # later we can add key-value pairs to the dictionary using assignment.
 empty_dict1["new_key"] = "new_value"
+
+
+# 4. Key → Value important concept to understand.
+student = {
+    "name": "Vishal",
+    "age": 22,
+    "city": "Chennai"
+}
+
+# keys names are unique identifiers for values in a dictionary. Each key is associated with a specific value,
+#  and you can use the key to access that value.
+
+# note:A dictionary is primarily accessed using its keys.
+student["name"] ## Output: 'Vishal'
+
+
+# not by index like a list. If you try to access a value using an index, it will result in an error.
+student[0]  # This will raise a KeyError
+
+# 5. Accessing Values
+
+student = {
+    "name": "Vishal",
+    "age": 22,
+    "city": "Chennai"
+}
+
+# To access a value in a dictionary, you use the key associated with that value. 
+# You can do this using square brackets [] or the get() method.
+
+print(student["name"]) # accessing using square brackets
+print(student.get("age")) # accessing using get() method
+
+
+# note:
+# 1. list uses index to access values, while dictionary uses keys.
+# 2. If you try to access a key that doesn't exist using square brackets, it will raise a KeyError. However, using the get() method will return None instead of raising an error.
