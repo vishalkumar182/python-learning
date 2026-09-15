@@ -94,4 +94,37 @@ print(student.get("age")) # accessing using get() method
 
 # note:
 # 1. list uses index to access values, while dictionary uses keys.
-# 2. If you try to access a key that doesn't exist using square brackets, it will raise a KeyError. However, using the get() method will return None instead of raising an error.
+# 2. If you try to access a key that doesn't exist using square brackets, it will raise a KeyError. 
+# However, using the get() method will return None instead of raising an error.
+
+
+
+#  **Python Dictionary — Part 2: Add, Update & Remove Data**
+
+1. # Adding a new key-value pair
+
+student = {
+    "name": "Vishal",
+    "age": 22,
+    "city": "Chennai"
+}
+
+student["course"] = "BE CSE"  # Adding a new key-value pair
+print(student)  # Output: {'name': 'Vishal', 'age': 22, 'city': 'Chennai', 'course': 'BE CSE'}
+
+
+# 2. Updating an existing value
+student["age"] = 23  # Updating the value for the key "age"
+print(student)  # Output: {'name': 'Vishal', 'age': 23, 'city': 'Chennai', 'course': 'BE CSE'}
+
+
+# 3. Removing data from a dictionary
+# There are several ways to remove data from a dictionary:
+student = {
+    "name": "Vishal",
+    "age": 22,
+    "city": "Chennai"
+}
+
+student.pop("age")  # Removes the key "age" and its associated value
+print(student)  # Output: {'name': 'Vishal', 'city': 'Chennai'}
