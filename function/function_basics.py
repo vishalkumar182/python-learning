@@ -1,0 +1,39 @@
+
+
+# need of functions in python:
+
+# 1. Reusability: Functions allow you to write a block of code once and reuse
+# it multiple times throughout your program. This reduces code duplication and makes your code more organized.
+
+# 2. Modularity: Functions help break down complex problems into smaller, manageable pieces.
+# Each function can focus on a specific task, making it easier to understand and maintain the code.
+
+# 3. Readability: Functions can improve the readability of your code by giving meaningful names to blocks of code. 
+# This makes it easier for others (and yourself) to understand what the code does.
+
+# example:
+name = "Vishal"
+print("Hello, " + name + "!") 
+name = "John"
+print("Hello, " + name + "!")
+name = "Alice"
+print("Hello, " + name + "!")
+
+# instead of repeating the same code, we can define a function to greet a user:
+def greet_user(name):
+    print("Hello, " + name + "!")
+
+greet_user("Vishal")
+greet_user("John")
+greet_user("Alice")
+
+
+# creating a function in python:
+# use the def keyword followed by the function name and parentheses ().
+
+def function_name(parameters):
+    # code block
+    return   # optional
+
+
+

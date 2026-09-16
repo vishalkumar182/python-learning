@@ -96,7 +96,6 @@ print(student.get("age")) # accessing using get() method
 # 1. list uses index to access values, while dictionary uses keys.
 # 2. If you try to access a key that doesn't exist using square brackets, it will raise a KeyError. 
 # However, using the get() method will return None instead of raising an error.
-<<<<<<< HEAD
 
 
 
@@ -129,6 +128,3 @@ student = {
 
 student.pop("age")  # Removes the key "age" and its associated value
 print(student)  # Output: {'name': 'Vishal', 'city': 'Chennai'}
-=======
-# built-in data types in python are list, tuples, dictionary and set
->>>>>>> 5ef48e23b8b453d9a85e063b22ba64c22f02399c
