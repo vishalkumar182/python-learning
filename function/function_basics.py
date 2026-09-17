@@ -36,4 +36,11 @@ def function_name(parameters):
     return   # optional
 
 
+def is_even(number):
+    """Returns True if a number is even, False otherwise."""
+    return number % 2 == 0
+
+# Test the function
+print(is_even(7))   # Output: False
+print(is_even(12))  # Output: True
 
