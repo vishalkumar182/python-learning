@@ -44,3 +44,12 @@ def is_even(number):
 print(is_even(7))   # Output: False
 print(is_even(12))  # Output: True
 
+def celsius_to_fahrenheit(celsius):
+    """Converts Celsius temperatures to Fahrenheit."""
+    fahrenheit = (celsius * 9/5) + 32
+    return fahrenheit
+
+# Example usage
+current_temp = celsius_to_fahrenheit(25)
+print(f"25°C is equal to {current_temp}°F")  # Output: 25°C is equal to 77.0°F
+
