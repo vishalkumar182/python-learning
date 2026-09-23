@@ -53,3 +53,13 @@ def celsius_to_fahrenheit(celsius):
 current_temp = celsius_to_fahrenheit(25)
 print(f"25°C is equal to {current_temp}°F")  # Output: 25°C is equal to 77.0°F
 
+
+def calculate_area(length, width):
+    """Returns the area of a rectangle."""
+    return length * width
+
+# Test the function
+result = calculate_area(5, 10)
+print(f"The area is: {result}")  # Output: The area is: 50
+
+
