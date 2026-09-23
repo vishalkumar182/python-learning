@@ -62,4 +62,15 @@ def calculate_area(length, width):
 result = calculate_area(5, 10)
 print(f"The area is: {result}")  # Output: The area is: 50
 
+def find_max_of_three(a, b, c):
+    """Finds the maximum of three values manually."""
+    if a >= b and a >= c:
+        return a
+    elif b >= a and b >= c:
+        return b
+    else:
+        return c
+
+# Test the function
+print(find_max_of_three(15, 42, 9))  # Output: 42
 
